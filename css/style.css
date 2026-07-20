@@ -67,6 +67,12 @@ p { margin-bottom: 1rem; color: var(--muted); }
 .btn:active { transform: translateY(1px); }
 .btn.secondary { background: #e5e7eb; color: var(--fg); }
 
+/* Navigation Stlye */
+nav {
+	display:flex;
+}
+
+
 /* Forms */
 input, textarea, select {
 	width: 100%;
