@@ -123,7 +123,6 @@ nav a:hover {
 
 #hero {
 	text-align: left;
-	padding: 4rem 2rem;
 	background: var(--primary-color-one);
 	color: #f8f6f0;
 }
@@ -136,35 +135,42 @@ nav a:hover {
 	line-height: 1.7;
 }
 
-#hero-social {
+.hero-social {
 	display: flex;
 	justify-content: left;
-	margin-left: 2rem;
+	flex-wrap: wrap;
 	gap: 1rem;
 	align-items: center;
 }
 
-#hero-social img {
+.hero-social img {
 	width: 20px;
 	height: 20px;
 	object-fit: contain;
 }
 
-#hero-links {
-	margin: 1rem 2rem;
+.hero-links {
 	display: flex;
 	justify-content: left;
+	flex-wrap: wrap;
 	gap: 1rem;
+	margin: 2rem 0;
 	background: var(--primary-color-one);
 }
 
-#hero-links a {
+.hero-links a {
 	text-decoration: none;
 	padding: 0.75rem 1rem;
 	border-radius: var(--radius);
 	background: var(--primary-color-three);
 	color: #fff;
 	transition: background 0.2s ease;
+}
+
+#about {
+	padding: 4rem 2rem;
+	background: var(--primary-color-two);
+	color: #f8f6f0;
 }
 
 /* Simple responsive image */
