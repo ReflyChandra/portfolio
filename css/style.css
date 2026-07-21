@@ -45,6 +45,11 @@ header {
 	z-index: 1000;
 }
 
+.logo img {
+	height: 70px;
+	width: auto;
+}
+
 /* Container
 .container {
 	width: 100%;
@@ -111,7 +116,7 @@ nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	gap: 1rem;
+	gap: 4rem;
 }
 
 nav a {
@@ -122,12 +127,21 @@ nav a {
 
 nav a:hover {
 	color: var(--primary-color-three);
+	text-decoration: underline;
+}
+
+nav a.active {
+	color: var(--primary-color-three);
+	font-weight: bold;
 }
 
 #hero {
 	text-align: left;
-	background: var(--primary-color-three);
+	background-image: url('../assets/images/hero-background.png');
+	background-size: cover;
+	background-position: center;
 	color: #f8f6f0;
+	min-height: 100vh;
 }
 
 #hero p {
