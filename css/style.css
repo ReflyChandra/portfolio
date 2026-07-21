@@ -45,22 +45,25 @@ header {
 	z-index: 1000;
 }
 
-/* Container */
+/* Container
 .container {
 	width: 100%;
 	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: calc(var(--gap) * 1.25);
-}
+}*/
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
 	color: var(--neutral-color-four);
 	font-weight: 600;
 	margin-bottom: 0.5rem;
+	padding-top: 1rem;
 }
 
-p { margin-bottom: 1rem; color: var(--paragraph-color); }
+p + p {
+  margin-top: 1rem;
+}
 
 /* Utility classes */
 .flex { display: flex; }
@@ -123,7 +126,7 @@ nav a:hover {
 
 #hero {
 	text-align: left;
-	background: var(--primary-color-one);
+	background: var(--primary-color-three);
 	color: #f8f6f0;
 }
 
@@ -155,7 +158,6 @@ nav a:hover {
 	flex-wrap: wrap;
 	gap: 1rem;
 	margin: 2rem 0;
-	background: var(--primary-color-one);
 }
 
 .hero-links a {
@@ -168,8 +170,22 @@ nav a:hover {
 }
 
 #about {
-	padding: 4rem 2rem;
 	background: var(--primary-color-two);
+	color: #f8f6f0;
+}
+
+#experience {
+	background: var(--primary-color-three);
+	color: #f8f6f0;
+}
+
+#projects {
+	background: var(--primary-color-two);
+	color: #f8f6f0;
+}
+
+#contact {
+	background: var(--primary-color-three);
 	color: #f8f6f0;
 }
 
