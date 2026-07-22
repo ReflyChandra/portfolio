@@ -58,26 +58,26 @@ header {
 	padding: calc(var(--gap) * 1.25);
 }*/
 
-/* Typography */
+/* Typography
 h1, h2, h3, h4, h5, h6 {
 	color: var(--neutral-color-four);
 	font-weight: 600;
 	margin-bottom: 0.5rem;
 	padding-top: 1rem;
-}
+} */
 
 p + p {
   margin-top: 1rem;
 }
 
-/* Utility classes */
+/* Utility classes
 .flex { display: flex; }
 .items-center { align-items: center; }
 .justify-between { justify-content: space-between; }
 .gap-sm { gap: 0.5rem; }
-.gap { gap: var(--gap); }
+.gap { gap: var(--gap); }  */
 
-/* Buttons */
+/* Buttons
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -92,6 +92,7 @@ p + p {
 }
 .btn:active { transform: translateY(1px); }
 .btn.secondary { background: #e5e7eb; color: var(--fg); }
+*/
 
 /* Forms */
 /*input, textarea, select {
@@ -103,6 +104,17 @@ p + p {
 	color: var(--fg);
 }
 */
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	letter-spacing: 0.05rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
 /* Navigation Style */
 nav {
 	display: flex;
@@ -191,11 +203,35 @@ nav a.active {
 #experience {
 	background: var(--primary-color-three);
 	color: #f8f6f0;
+	display: flex;
+	flex-direction: column;
 }
 
-#projects {
-	background: var(--primary-color-two);
-	color: #f8f6f0;
+.experience-list {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	justify-content: center;
+}
+
+#experience li {
+	list-style: none;
+	align-items: center;
+	background: var(--primary-color-one);
+	flex: 1 1 300px;
+	max-width: 300px;
+	justify-content: center;
+	text-align: center;
+	gap: 1rem;
+	padding: 1rem;
+	
+}
+
+#experience li img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
 }
 
 #contact {
@@ -203,8 +239,46 @@ nav a.active {
 	color: #f8f6f0;
 }
 
-/* Simple responsive image */
-img { max-width: 100%; height: auto; display: block; }
+#projects {
+	background: var(--primary-color-two);
+	color: #f8f6f0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projects-description {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.project {
+	background: var(--neutral-color-three);
+	border-radius: var(--radius);
+	max-width: 256px;
+	flex: 1 1 256px;
+}
+
+.project img {
+	max-width: 256px;
+	max-height: 144px;
+	border-top-left-radius: var(--radius);
+	border-top-right-radius: var(--radius);
+}
+
+.project h4, .project p, .project .hashtag {
+	padding: 0rem 1rem;
+}
+
+.hashtag {
+	color: var(--neutral-color-two);
+	font-size: 0.775rem;
+	font-style: italic;
+}
 
 /* Helpers */
 .sr-only {
